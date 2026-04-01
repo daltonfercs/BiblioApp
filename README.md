@@ -9,31 +9,22 @@ BiblioApp es una aplicación móvil intuitiva y elegante diseñada para los aman
 
 Para este proyecto, se han diseñado conceptos visuales enfocados en la experiencia del usuario (UX) y la estética del Material Design. Aquí te mostramos cómo se han proyectado las pantallas principales para ofrecer una interfaz limpia y moderna:
 
-<p align="center">
-  <img src="https://image.shutterstock.com/image-photo/three-distinct-app-screen-mockups-260nw-2114227843.jpg" width="100%" alt="BiblioApp Screen Concepts - Multi-Panel View" />
-</p>
 
 ### 1. Panel de Inicio (Dashboard): "Mi Biblioteca"
-<p align="center">
-  <img src="https://image.shutterstock.com/image-photo/hand-holding-smartphone-displaying-digital-260nw-2169542713.jpg" width=100% alt="Panel 1: Mi Biblioteca" />
-</p>
+
 La pantalla de inicio está diseñada para ofrecer una vista global y ordenada de toda tu colección.
 * **Vista en Cuadrícula:** Visualiza las portadas de tus libros en un diseño de tarjeta limpio.
 * **Barra de Búsqueda:** Encuentra rápidamente cualquier libro por título, autor o género.
 * **Acceso Rápido:** Un botón flotante (+) para agregar nuevos títulos instantáneamente.
 
 ### 2. Detalle del Libro y Gestión de Estado
-<p align="center">
-  <img src="https://image.shutterstock.com/image-photo/hand-holding-smartphone-blank-screen-260nw-2183863777.jpg" width=100% alt="Panel 2: Detalle" />
-</p>
+
 Al seleccionar un libro, accedes a una ficha detallada con toda su información.
 * **Ficha Completa:** Portada, título, autor, año de publicación, resumen de la trama y calificación (estrellas).
 * **Gestión de Estados:** Marca los libros como 'leídos', 'leyendo' o 'por leer' para llevar un seguimiento de tu progreso.
 
 ### 3. Búsqueda y Escáner Avanzado
-<p align="center">
-  <img src="https://image.shutterstock.com/image-photo/hand-holding-smartphone-over-blurred-260nw-1830219662.jpg" width=100% alt="Panel 3: Búsqueda y Escáner" />
-</p>
+
 La aplicación está proyectada para facilitar la entrada de datos.
 * **Escáner Integrado:** *(Concepto)* Usar la cámara para escanear el código de barras del libro e importar la información automáticamente.
 * **Búsqueda Externa:** Conectarse a bases de datos de libros en línea para obtener información precisa sin escribirlo todo manualmente.
