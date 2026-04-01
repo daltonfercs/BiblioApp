@@ -1,48 +1,83 @@
-# 📚 BiblioApp (Android Library Management)
+# BiblioApp 📚
+### Gestor de Bibliotecas Personales
 
-BiblioApp es una aplicación móvil nativa para Android diseñada para facilitar la gestión de libros, miembros y préstamos en una biblioteca. 
+BiblioApp es una aplicación móvil intuitiva y elegante diseñada para los amantes de la lectura que desean llevar un control digital completo de su colección de libros. Olvídate de los excels complicados o de no recordar qué libros tienes; BiblioApp te permite catalogar, buscar y organizar tu biblioteca personal de forma sencilla y eficiente.
 
-El ecosistema móvil utilizando las mejores prácticas, patrones de diseño y herramientas de desarrollo actuales de Android.
+---
 
-## ✨ Características Principales
+## 🎨 Conceptos Visuales y Funcionalidades Clave
 
-* **Gestión de Libros:** Agregar, editar y listar el catálogo de libros disponibles.
-* **Gestión de Miembros:** Registro y administración de los usuarios de la biblioteca.
-* **Sistema de Préstamos:** Emisión y devolución de libros de forma sencilla y rápida.
-* **Panel de Control (Dashboard):** Vista general del estado de la biblioteca e inventario.
-* **Modo Oscuro:** Soporte nativo para temas claros y oscuros integrados con Material Design 3.
+Para este proyecto, se han diseñado conceptos visuales enfocados en la experiencia del usuario (UX) y la estética del Material Design. Aquí te mostramos cómo se han proyectado las pantallas principales para ofrecer una interfaz limpia y moderna:
 
-## 🛠️ Stack Tecnológico y Arquitectura
+<p align="center">
+  <img src="https://image.shutterstock.com/image-photo/three-distinct-app-screen-mockups-260nw-2114227843.jpg" width="100%" alt="BiblioApp Screen Concepts - Multi-Panel View" />
+</p>
 
-El proyecto está desarrollado con **Kotlin** y sigue la arquitectura **MVVM** (Model-View-ViewModel) recomendada por Google, garantizando un código limpio, escalable y fácil de mantener.
+### 1. Panel de Inicio (Dashboard): "Mi Biblioteca"
+<p align="center">
+  <img src="https://image.shutterstock.com/image-photo/hand-holding-smartphone-displaying-digital-260nw-2169542713.jpg" width=100% alt="Panel 1: Mi Biblioteca" />
+</p>
+La pantalla de inicio está diseñada para ofrecer una vista global y ordenada de toda tu colección.
+* **Vista en Cuadrícula:** Visualiza las portadas de tus libros en un diseño de tarjeta limpio.
+* **Barra de Búsqueda:** Encuentra rápidamente cualquier libro por título, autor o género.
+* **Acceso Rápido:** Un botón flotante (+) para agregar nuevos títulos instantáneamente.
 
-* **UI:** [Jetpack Compose](https://developer.android.com/jetpack/compose) - Kit de herramientas moderno y declarativo para construir interfaces nativas.
-* **Base de Datos Local:** [Room](https://developer.android.com/training/data-storage/room) - Capa de abstracción sobre SQLite para un acceso fluido a los datos.
-* **Asincronismo y Reactividad:** [Corrutinas](https://kotlinlang.org/docs/coroutines-overview.html) y [Flow](https://kotlinlang.org/docs/flow.html) de Kotlin.
-* **Inyección de Dependencias:** [Hilt](https://dagger.dev/hilt/) (Recomendado/En progreso).
-* **Navegación:** Jetpack Navigation Compose.
+### 2. Detalle del Libro y Gestión de Estado
+<p align="center">
+  <img src="https://image.shutterstock.com/image-photo/hand-holding-smartphone-blank-screen-260nw-2183863777.jpg" width=100% alt="Panel 2: Detalle" />
+</p>
+Al seleccionar un libro, accedes a una ficha detallada con toda su información.
+* **Ficha Completa:** Portada, título, autor, año de publicación, resumen de la trama y calificación (estrellas).
+* **Gestión de Estados:** Marca los libros como 'leídos', 'leyendo' o 'por leer' para llevar un seguimiento de tu progreso.
 
-## 🚀 Empezando (Getting Started)
+### 3. Búsqueda y Escáner Avanzado
+<p align="center">
+  <img src="https://image.shutterstock.com/image-photo/hand-holding-smartphone-over-blurred-260nw-1830219662.jpg" width=100% alt="Panel 3: Búsqueda y Escáner" />
+</p>
+La aplicación está proyectada para facilitar la entrada de datos.
+* **Escáner Integrado:** *(Concepto)* Usar la cámara para escanear el código de barras del libro e importar la información automáticamente.
+* **Búsqueda Externa:** Conectarse a bases de datos de libros en línea para obtener información precisa sin escribirlo todo manualmente.
 
-Para probar este proyecto en tu entorno local:
+---
 
-1.  Clona este repositorio:
+## 🛠️ Tecnologías y Arquitectura
+
+Este proyecto se ha desarrollado siguiendo las mejores prácticas de la industria para garantizar un código limpio, escalable y mantenible.
+
+* **Lenguaje:** Kotlin 100%
+* **Plataforma:** Android Native SDK
+* **Arquitectura:** MVVM (Model-View-ViewModel) con Clean Architecture.
+* **Diseño:** Material Design
+* **Componentes de Jetpack:**
+    * *Navigation Component:* Para una navegación fluida entre fragmentos.
+    * *ViewBinding/DataBinding:* Para la vinculación segura de vistas.
+    * *ViewModel & LiveData:* Para la gestión de estados de la UI.
+    * *Room Database:* Para el almacenamiento persistente y sin conexión (offline-first).
+    * *Coroutine/Flow:* Para la gestión eficiente de procesos asíncronos y flujos de datos.
+
+---
+
+## 🚀 Instalación y Configuración
+
+Sigue estos pasos para compilar y ejecutar el proyecto en tu entorno local.
+
+1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/tu-usuario/BiblioApp.git](https://github.com/daltonfercs/BiblioApp.git)
+    git clone [https://github.com/daltonfercs/BiblioApp.git](https://github.com/daltonfercs/BiblioApp.git)
     ```
-2.  Abre el proyecto en **Android Studio** (se recomienda la versión más reciente, Iguana o superior).
-3.  Espera a que Gradle sincronice todas las dependencias.
-4.  Ejecuta la aplicación en un emulador o dispositivo físico (API 24+).
+2.  **Abrir en Android Studio:**
+    Abre Android Studio y selecciona `File > Open`, luego navega hasta la carpeta del proyecto clonado.
+3.  **Sincronizar Gradle:**
+    Android Studio detectará automáticamente el archivo `build.gradle` y te pedirá que sincronices el proyecto. Haz clic en el botón de sincronización de Gradle en la parte superior derecha.
+4.  **Ejecutar:**
+    * Selecciona un dispositivo virtual (AVD) o un dispositivo físico conectado.
+    * Haz clic en el botón verde de "Play" para compilar y ejecutar la aplicación.
 
-## 🗺️ Hoja de Ruta (Roadmap de Migración)
+*(Nota: Asegúrate de tener instalado el SDK de Android y la versión de Kotlin correspondiente).*
 
-- [x] Configuración inicial del proyecto con Jetpack Compose.
-- [ ] Diseño de las Entidades y DAOs con Room (Migración de Apache Derby).
-- [ ] Implementación del Dashboard principal.
-- [ ] Pantallas de registro de Libros y Miembros.
-- [ ] Lógica de negocio para préstamos y devoluciones.
-- [ ] Explorar alternativas para la exportación a PDF y notificaciones.
+---
 
-## 👨‍💻 Autor
+## 📄 Licencia y Autor
 
-Desarrollado por **Dalton** - Desarrollador Android.
+* **Autor:** Dalton Fercs ([GitHub](https://github.com/daltonfercs))
+* **Licencia:** Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
